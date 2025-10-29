@@ -57,7 +57,6 @@ namespace AmbiClean.Repositories
                     Ativo = reader.GetBoolean(3)
                 });
             }
-
             return checklist;
         }
 

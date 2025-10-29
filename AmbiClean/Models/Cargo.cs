@@ -11,8 +11,7 @@
             Id = id;
             Nome = nome;
             Descricao = descricao;
-        }
-
+        } 
         public Cargo() { }
     }
 }

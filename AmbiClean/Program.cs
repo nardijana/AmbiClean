@@ -8,6 +8,9 @@ class Program
     {
         var usuarioRepo = new UsuarioRepository();
 
+
+        var cargoRepositorio = new CargoRepository();
+
         //MOSTRAR TODOS OK
         //List<Usuario> usuarios = usuarioRepo.BuscarTodos();
 
@@ -25,7 +28,8 @@ class Program
         //}
 
 
-        //INSERIR OK
+
+       // INSERIR OK
         //var novoUsuario = new Usuario
         //{
         //    NomeCompleto = "Pedro",
@@ -36,6 +40,10 @@ class Program
         //    Ativo = true,
         //    CargoId = 4
         //};
+
+
+        //Cargo gerente = new Cargo(1, "Gerente", "Responsável pela gestão da equipe");
+        //Console.WriteLine(gerente.Nome); // Saída: Gerente
 
         //bool inserido = usuarioRepo.Inserir(novoUsuario);
         //Console.WriteLine($"Usuário inserido: {inserido}");
