@@ -17,7 +17,7 @@ namespace AmbiClean.Repositories
             try
             {
                 using var connection = _db.GetConnection();
-                string query = @"INSERT INTO Local 
+                string query = @"INSERT INTO Tarefa 
                                  (AreaId, ChecklistId, Nome, Descricao, MinutosEstimados, Ativo)
                                  VALUES (@areaId, @checklistId, @nome, @descricao, @minutosEstimados, @ativo)";
                 using var cmd = new MySqlCommand(query, connection);
@@ -94,7 +94,7 @@ namespace AmbiClean.Repositories
         {
             using var conn = _db.GetConnection();
 
-            var sql = @"UPDATE Usuario SET 
+            var sql = @"UPDATE Tarefa SET 
                         AreaId = @areaId,
                         ChecklistId = @checklistId,
                         Nome = @nome,
@@ -117,7 +117,7 @@ namespace AmbiClean.Repositories
         {
             using var conn = _db.GetConnection();
 
-            var sql = "DELETE FROM Checklist WHERE id = @id";
+            var sql = "DELETE FROM Tarefa WHERE id = @id";
 
             using var cmd = new MySqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@id", id);

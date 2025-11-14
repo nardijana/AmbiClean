@@ -16,5 +16,7 @@
             HoraFim = horaFim;
             Descricao = descricao;
         }
+
+        public Turno() { }
     }
 }

@@ -4,14 +4,14 @@ namespace AmbiClean.Models
 {
     public class Area
     {
-        public int Id { get; set; }
+        public int AreaId { get; set; }
         public int LocalId { get; set; }
         public string Nome { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
 
-        public Area(int id, int localId, string nome, string descricao)
+        public Area(int areaId, int localId, string nome, string descricao)
         {
-            Id = id;
+            AreaId = areaId;
             LocalId = localId;
             Nome = nome;
             Descricao = descricao;

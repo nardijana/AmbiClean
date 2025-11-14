@@ -10,7 +10,7 @@ namespace AmbiClean.Database
         private MySqlConnection _connection;
 
         private readonly string _connectionString =
-            "Server=98.81.166.59;Port=3306;Uid=alunos;Pwd=alunos;Database=Ambiclean";
+            "Server=3.89.66.33;Port=3306;Uid=alunos;Pwd=alunos;Database=Ambiclean";
 
         private Database()
         {

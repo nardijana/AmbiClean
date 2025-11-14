@@ -42,7 +42,7 @@ namespace AmbiClean.Repositories
 
             using var conn = _db.GetConnection();
 
-            var sql = "SELECT Nome, Descricao, Ativo FROM Checklist";
+            var sql = "SELECT Id, Nome, Descricao, Ativo FROM Checklist";
 
             using var cmd = new MySqlCommand(sql, conn);
             using var reader = cmd.ExecuteReader();
@@ -75,10 +75,9 @@ namespace AmbiClean.Repositories
             {
                 return new Checklist
                 {
-                    Id = reader.GetInt32(0),
-                    Nome = reader.GetString(1),
-                    Descricao = reader.GetString(2),
-                    Ativo = reader.GetBoolean(3)
+                    Nome = reader.GetString(0),
+                    Descricao = reader.GetString(1),
+                    Ativo = reader.GetBoolean(2)
                 };
             }
 
@@ -89,7 +88,7 @@ namespace AmbiClean.Repositories
         {
             using var conn = _db.GetConnection();
 
-            var sql = @"UPDATE Usuario SET 
+            var sql = @"UPDATE Checklist SET 
                         Nome = @nome,
                         Descricao = @descricao,
                         Ativo = @ativo";

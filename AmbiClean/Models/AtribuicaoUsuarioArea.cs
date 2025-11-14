@@ -14,5 +14,7 @@
             AreaId = areaId;
             AtribuidoEm = atribuidoEm;
         }
+
+        public AtribuicaoUsuarioArea() { }
     }
 }

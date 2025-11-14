@@ -85,7 +85,7 @@ namespace AmbiClean.Repositories
         {
             using var conn = _db.GetConnection();
 
-            var sql = @"UPDATE Usuario SET 
+            var sql = @"UPDATE Local SET 
                         Nome = @nome,
                         Endereco = @endereco,
                         Ativo = @ativo";

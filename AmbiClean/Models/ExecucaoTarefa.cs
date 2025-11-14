@@ -26,5 +26,7 @@
             Observacoes = observacoes;
             CriadoEm = criadoEm;
         }
+
+        public ExecucaoTarefa() { }
     }
 }

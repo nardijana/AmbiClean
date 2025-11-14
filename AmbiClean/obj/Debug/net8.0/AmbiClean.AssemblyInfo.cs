@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmbiClean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc2e9fb0d3cb84c306b8424d5efec808cca90068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e7f5d324df3631e3ffb51d1741c66498dd35d78")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmbiClean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmbiClean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

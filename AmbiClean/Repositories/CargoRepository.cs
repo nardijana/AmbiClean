@@ -90,12 +90,10 @@ namespace AmbiClean.Repositories
             using var conn = _db.GetConnection();
 
             var sql = @"UPDATE Cargo SET 
-                        Id = @id,
                         Nome = @nome,
                         Descricao = @descricao";
 
             using var cmd = new MySqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@id", cargo.Id);
             cmd.Parameters.AddWithValue("@nome", cargo.Nome);
             cmd.Parameters.AddWithValue("@descricao", cargo.Descricao);
 

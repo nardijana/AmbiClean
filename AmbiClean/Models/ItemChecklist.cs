@@ -14,5 +14,7 @@
             Descricao = descricao;
             Posicao = posicao;
         }
+
+        public ItemChecklist() { }
     }
 }

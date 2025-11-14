@@ -19,5 +19,7 @@
             Comentario = comentario;
             MarcadoEm = marcadoEm;
         }
+
+        public ResultadoChecklist() { }
     }
 }
